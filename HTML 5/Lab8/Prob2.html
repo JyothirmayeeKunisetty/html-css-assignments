@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Methods</title>
+</head>
+<body style="background-color:skyblue">
+<form action="empinfo@capgemini.com" name="empinfo" method="post"
+enctype="multipart/form-data">
+<center>
+
+<h1>Candidate Information</h1>
+
+<table border=2px>
+
+<tr>
+	<td>Name:&nbsp<font color="red">*</td>
+	<td><input type="text" size="20" placeholder="Enter Name" maxlength="15" required></td>
+</tr>
+
+<tr>
+	<td>Password:&nbsp<font color="red">*</td>
+	<td><input type="password" placeholder="Enter Password" size="20" maxlength="15" required></td>
+</tr>
+
+<tr>
+	<td>Phone number:&nbsp<font color="red">*</td>
+	<td><input type="tel" placeholder="987-654-3210" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="10" required></td>
+</tr>
+
+<tr>
+	<td>Gender:&nbsp<font color="red">*</td>
+	<td>
+		<input type="radio">Male&nbsp&nbsp
+		<input type="radio">Female<br>
+	</td>
+</tr>
+
+<tr>
+	<td>Date of Birth:&nbsp<font color="red">*</td>
+	<td>
+		<input type="date" max="2018-07-14" required>
+	</td>
+
+</tr>
+
+<tr>
+	<td>Email:&nbsp<font color="red">*</td>
+	<td><input type="email" placeholder="Ex:john@example.com" size="20" pattern=*"@capgemini.com" title="Must be a capgemini.com email address" required><br>
+	</td>
+</tr>
+
+<tr>
+	<td>Highest Qualifiaction:&nbsp<font color="red">*</td>
+	<td>
+	<select>
+	   <option>Select Highest Qualification</option>
+	   <option>B.Tech</option>
+	   <option>M.Tech</option>
+	   <option>MBA</option>
+	   <option>MCA</option>
+	   <option>MSc</option>
+	   <option>MA</option>
+	   <option>BSC</option>
+	</select>
+	</td>
+</tr>
+
+<tr>
+	<td>Courses Interested in:&nbsp<font color="red">*</td>
+	<td>
+	<input type="checkbox" name="java"> Java
+	<input type="checkbox" name="html5"> HTML 5
+	<input type="checkbox" name="css3"> CSS 3
+	<input type="checkbox" name="angularjs"> Angular JS
+	<input type="checkbox" name="jquery">JQuery
+	</td>
+</tr>
+
+<tr>
+	<td>Comments:(Mention External Certifications if any)</td>
+	<td>
+	<textarea rows="3" cols="51" placeholder="Ex:Oracle,Java,DBMS,..."></textarea>
+	</td>
+</tr>
+
+<tr>
+	<td>Upload Degree / External Certificates:&nbsp<font color="red">*</td>
+	<td>
+	<input type="file" value="Choose Files">
+	</td>
+</tr>
+
+<tr>
+	<td></td>
+	<td>
+	<input type="submit" value="Submit Information">&nbsp&nbsp&nbsp&nbsp
+	<input type="reset" value="Clear">
+	</td>
+</tr>
+
+</table>
+</form>
+
+<font color="red">All Fields marked (*) are mandatory
+
+</center>
+</body>
+</html>
